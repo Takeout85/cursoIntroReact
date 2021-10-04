@@ -1,0 +1,29 @@
+.TodoSearch {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.TodoSearch-input {
+  background-color: #ffffff;
+  border: 2px solid rgb(155, 238, 135);
+  border-radius: 10PX;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 54px;
+  width: 90%;
+  max-width: 430px;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+.TodoSearch-input::placeholder {
+  color: #A5A5A5;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+.TodoSearch-input:focus {
+  outline-color: #bea2db;
+}

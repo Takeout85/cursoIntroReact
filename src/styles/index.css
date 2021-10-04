@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #aeddf5;
+  color: #1E1E1F;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+#root {
+  margin: 0 24px;
+  min-height: 100vh;
+}
