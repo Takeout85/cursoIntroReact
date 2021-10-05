@@ -24,6 +24,6 @@ function TodoItem({
       </span>
     </li>
   );
-}
+};
 
 export { TodoItem };

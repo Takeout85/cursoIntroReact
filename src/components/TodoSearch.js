@@ -18,6 +18,6 @@ function TodoSearch() {
       />
     </div>
   );
-}
+};
 
 export { TodoSearch };
