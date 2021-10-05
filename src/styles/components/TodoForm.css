@@ -1,0 +1,72 @@
+form {
+  background-color: rgb(155, 238, 135);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 600px;
+  height: 80%;
+  max-height: 600px;
+}
+
+textarea {
+  resize: none;
+  background-color: #F9FBFC;
+  border-radius: 2px;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+  color: #1E1E1F;
+  font-size: 20px;
+  text-align: center;
+  padding: 12px;
+  height: 40%;
+  width: 80%;
+}
+
+textarea:focus {
+  outline-color: #bea2db;
+}
+
+label {
+  text-align: center;
+  font-weight: bold;
+  color: #1E1E1F;
+  font-size: 26px;
+}
+
+.bottonContainer {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottonForm{
+  border: none;
+  border-radius: 15px;
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5)  ;
+  font-size: 18px;
+  font-weight: bold;
+  height: 50%;
+  width: 40%;
+}
+
+.bottonForm:active {
+  transform: scale(.97);
+}
+
+.bottonContainer-cancel {
+  background-color: #f85858;
+   
+}
+
+.bottonContainer-add {
+  background-color: #bea2db;
+ 
+}
+
+
+
