@@ -1,5 +1,6 @@
 import React from 'react';
 import { TodoContext } from './TodoContext';
+import '../styles/components/TodoForm.css'
 
 function TodoForm() {
 
@@ -25,23 +26,25 @@ function TodoForm() {
   };
 
   return (
-    <form action="" onSubmit={onSubmit}>
-      <label>...</label>
+    <form action="" onSubmit={onSubmit} className="">
+      <label>Escribe tu nueva tarea </label>
       <textarea 
         value={newTodoValue}
         onChange={onChange}
         placeholder="Cortar cebolla para el almuerzo"
       />
-      <div>
+      <div className="bottonContainer">
         <button
           type="button" 
           onClick={onCancel}
+          className="bottonForm bottonContainer-cancel"
         >
           cancelar
         </button>
         <button 
           type="submit"
           onClick={onSubmit}
+          className="bottonForm bottonContainer-add"
         >
           anniadir
         </button>
