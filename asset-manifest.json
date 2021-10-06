@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/cursoIntroReact/static/css/main.b3a41efb.chunk.css",
-    "main.js": "/cursoIntroReact/static/js/main.e33ca11d.chunk.js",
-    "main.js.map": "/cursoIntroReact/static/js/main.e33ca11d.chunk.js.map",
+    "main.css": "/cursoIntroReact/static/css/main.5f407a46.chunk.css",
+    "main.js": "/cursoIntroReact/static/js/main.d034d93b.chunk.js",
+    "main.js.map": "/cursoIntroReact/static/js/main.d034d93b.chunk.js.map",
     "runtime-main.js": "/cursoIntroReact/static/js/runtime-main.4768d232.js",
     "runtime-main.js.map": "/cursoIntroReact/static/js/runtime-main.4768d232.js.map",
     "static/js/2.148a65cc.chunk.js": "/cursoIntroReact/static/js/2.148a65cc.chunk.js",
     "static/js/2.148a65cc.chunk.js.map": "/cursoIntroReact/static/js/2.148a65cc.chunk.js.map",
     "index.html": "/cursoIntroReact/index.html",
-    "static/css/main.b3a41efb.chunk.css.map": "/cursoIntroReact/static/css/main.b3a41efb.chunk.css.map",
+    "static/css/main.5f407a46.chunk.css.map": "/cursoIntroReact/static/css/main.5f407a46.chunk.css.map",
     "static/js/2.148a65cc.chunk.js.LICENSE.txt": "/cursoIntroReact/static/js/2.148a65cc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4768d232.js",
     "static/js/2.148a65cc.chunk.js",
-    "static/css/main.b3a41efb.chunk.css",
-    "static/js/main.e33ca11d.chunk.js"
+    "static/css/main.5f407a46.chunk.css",
+    "static/js/main.d034d93b.chunk.js"
   ]
 }
