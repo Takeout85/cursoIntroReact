@@ -21,17 +21,25 @@ function TodoForm() {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    addTodo(newTodoValue)
-    setOpenModal(false);
+    
+    if(newTodoValue === ''){
+      console.log(
+        'actualizar estado de todo lleno o no'
+      ); 
+    } else {
+      addTodo(newTodoValue)
+      setOpenModal(false);
+    }
+
   };
 
   return (
     <form action="" onSubmit={onSubmit} className="">
-      <label>Escribe tu nueva tarea </label>
+      <label>Write your new TASK</label>
       <textarea 
         value={newTodoValue}
         onChange={onChange}
-        placeholder="Cortar cebolla para el almuerzo"
+        placeholder="Buy balls for the game"
       />
       <div className="bottonContainer">
         <button
@@ -39,14 +47,14 @@ function TodoForm() {
           onClick={onCancel}
           className="bottonForm bottonContainer-cancel"
         >
-          cancelar
+          Cancel
         </button>
         <button 
           type="submit"
           onClick={onSubmit}
           className="bottonForm bottonContainer-add"
         >
-          anniadir
+          Add
         </button>
       </div>
     </form>
