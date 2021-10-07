@@ -1,5 +1,7 @@
 import React from 'react';
-import '../styles/components/TodoItem.css'
+import { FaCheck } from 'react-icons/fa';
+import { FaTrashAlt } from 'react-icons/fa';
+import '../styles/components/TodoItem.css';
 
 function TodoItem({ 
   completed, 
@@ -13,14 +15,14 @@ function TodoItem({
         className={`Icon-check ${completed ? 'Icon-check--active' : ''}`}
         onClick={onComplete}
       >
-        √
+        <FaCheck />
       </span>
       <p className={completed ? 'TodoItem-p--complete' : ''}>{text}</p>
       <span 
         className="icon-deleted"
         onClick={onDelete}
       >
-        X
+        <FaTrashAlt />
       </span>
     </li>
   );
