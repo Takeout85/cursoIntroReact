@@ -1,0 +1,37 @@
+.EmtyTodosContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.EmtyTodosContainer__buttonIcon {
+  background-color: #e8e6eb; 
+  border: none;
+  border-radius: 50%;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+
+.EmtyTodosContainer__text {
+  color: rgb(184, 182, 182);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.EmtyTodosContainer__buttonIcon span {
+  color: rgb(184, 182, 182);
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+

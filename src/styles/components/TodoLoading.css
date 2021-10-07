@@ -1,0 +1,96 @@
+.loadingTodo {
+  background-color: #e8e6eb;
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  min-height: 70px;
+  height: auto;
+}
+
+.loadingTodo-text {
+  text-align: start;
+  color: rgb(184, 182, 182);
+  border-left: 1px solid rgb(184, 182, 182);
+  border-right: 1px solid rgb(184, 182, 182);
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 70%;
+  height: auto;
+}
+.loadingTodo-text p {
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.loadingTodo-checkIcon,
+.loadingTodo-deleteIcon {
+  color: rgb(184, 182, 182);
+  cursor: pointer;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 900;
+  width: 15%;
+  height: 100%;
+}
+
+.loadingTodo__loadingIcon {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.loadingTodo__loadingIcon-1,
+.loadingTodo__loadingIcon-2,
+.loadingTodo__loadingIcon-3 {
+  background-color: rgb(184, 182, 182);
+  border-radius: 50%;
+  margin-left: 15px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+
+}
+.loadingTodo__loadingIcon-1 {
+  animation: loadingAnimation 850ms ease-in-out infinite;
+}
+.loadingTodo__loadingIcon-2 {
+  animation: loadingAnimation 850ms ease-in-out infinite;
+  animation-delay: 200ms;
+}
+.loadingTodo__loadingIcon-3 {
+  animation: loadingAnimation 850ms ease-in-out infinite;
+  animation-delay: 400ms;
+}
+
+
+@keyframes loadingAnimation {
+  0% {
+    transform: translate(0px, 5px);
+  }
+  25% {
+    transform:  translate(0px, -10px);
+  }
+  50% {
+    transform: translate(0px, -20px);
+  }
+  75% {
+    transform: translate(0px, -10px);
+  }
+  100%{
+    transform: translate(0px, 5px);
+  }
+
+}
