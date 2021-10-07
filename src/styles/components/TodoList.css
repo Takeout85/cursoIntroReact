@@ -7,8 +7,8 @@
   margin: 30px auto;
   font-size: 16px;
   font-weight: 500;
+  align-items: flex-end;
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 95%;
   max-width: 550px;
@@ -16,12 +16,12 @@
 }
 
 .TodoList ul {
-  margin: 20px 0;
+  margin: 0;
   padding: 0;
   list-style: none;
   overflow: scroll;
   width: 95%;
-  height: 95%;
+  height: 90%;
 }
 
 .TodoList ul::-webkit-scrollbar {

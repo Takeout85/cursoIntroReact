@@ -21,15 +21,8 @@ function TodoForm() {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    
-    if(newTodoValue === ''){
-      console.log(
-        'actualizar estado de todo lleno o no'
-      ); 
-    } else {
-      addTodo(newTodoValue)
-      setOpenModal(false);
-    }
+    addTodo(newTodoValue)
+    setOpenModal(false);
 
   };
 

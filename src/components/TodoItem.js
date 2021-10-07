@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCheck } from 'react-icons/fa';
-import { FaTrashAlt } from 'react-icons/fa';
+import { FaTrash } from 'react-icons/fa';
 import '../styles/components/TodoItem.css';
 
 function TodoItem({ 
@@ -22,7 +22,7 @@ function TodoItem({
         className="icon-deleted"
         onClick={onDelete}
       >
-        <FaTrashAlt />
+        <FaTrash />
       </span>
     </li>
   );
