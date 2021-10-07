@@ -1,5 +1,6 @@
 import React from 'react';
 import { TodoContext } from './TodoContext';
+import { FaPlus } from 'react-icons/fa';
 import '../styles/components/CreateTodoButton.css'
 
 function CreateTodoButton() {
@@ -9,7 +10,7 @@ function CreateTodoButton() {
   }
   return (
     <button className="CreateTodoButton" onClick={onClickButton}>
-      <span className="CreateTodoButton-span">+</span>
+      <FaPlus className="CreateTodoButton-span"/>
     </button>
   )
 }
