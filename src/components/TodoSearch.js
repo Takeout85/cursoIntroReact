@@ -3,7 +3,7 @@ import { TodoContext } from './TodoContext';
 import '../styles/components/TodoSearch.css'
 
 function TodoSearch() {
-  const { serchValue, setSearchValue } = React.useContext(TodoContext)
+  const { searchValue, setSearchValue } = React.useContext(TodoContext)
   const  onSearchValueChange = (event) => {
     setSearchValue(event.target.value)
   }
@@ -13,7 +13,7 @@ function TodoSearch() {
         className="TodoSearch-input" 
         type="text" 
         placeholder="Search Task"
-        value={serchValue}
+        value={searchValue}
         onChange={onSearchValueChange}
       />
     </div>
