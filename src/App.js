@@ -9,8 +9,9 @@ import { Modal } from './components/Modal';
 import { TodoForm } from './components/TodoForm';
 import { TodosError } from './components/TodosError';
 import { TodosLoading } from './components/TodosLoading';
-import { EmtyTodos } from './components/EmtyTodos';
+import { EmptyTodos } from './components/EmptyTodos';
 import { TodoHeader } from './components/TodoHeader';
+import { EmptySearch } from './components/EmptySearch';
 
 function App() {
   const {
@@ -40,21 +41,33 @@ function App() {
         setSearchValue={setSearchValue}
       />
       </TodoHeader>
-      
-      <TodoList>
-        {error && <TodosError error={error}/>}
-        {(loading && !error) && new Array(4).fill().map((item, index)=>( <TodosLoading  key={index} />))}
-        {(!loading && !searchedTodos.length && !error) && <EmtyTodos />}
 
-        {searchedTodos.map(todo => (
-          <TodoItem 
-            key={todo.text} 
-            text={todo.text} 
-            completed={todo.completed}
-            onComplete={() => toggleCompleteTodos(todo.text)}
-            onDelete={() => deleteTodos(todo.text)}
-          />
-        ))}
+      <TodoList 
+        error={error}
+        loading={loading}
+        searchedTodos={searchedTodos}
+        searchValue={searchValue}
+        totalTodos={totalTodos}
+        onError={() => <TodosError />}
+        onLoading={() => <TodosLoading/>}
+        onEmptyTodos={() => <EmptyTodos />}
+        onEmptySearchResult={() => <EmptySearch searchValue={searchValue}/>}
+        // render={todo => <TodoItem 
+        //   key={todo.text} 
+        //   text={todo.text} 
+        //   completed={todo.completed}
+        //   onComplete={() => toggleCompleteTodos(todo.text)}
+        //   onDelete={() => deleteTodos(todo.text)}
+        // />}
+      >
+        {todo => (<TodoItem 
+          key={todo.text} 
+          text={todo.text} 
+          completed={todo.completed}
+          onComplete={() => toggleCompleteTodos(todo.text)}
+          onDelete={() => deleteTodos(todo.text)}
+        />)}
+
       </TodoList>
 
       {!!openModal && (
@@ -64,7 +77,7 @@ function App() {
             setOpenModal={setOpenModal}
           />
         </Modal>
-      )};
+      )}
 
       <CreateTodoButton 
         setOpenModal={setOpenModal} 
